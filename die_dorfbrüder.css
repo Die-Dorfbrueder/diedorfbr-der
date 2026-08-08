@@ -54,20 +54,20 @@ h2, .titel-rechts {
   padding-bottom: 6px;
   display: inline-block;
 }
-/* Gilt nur, wenn der Bildschirm 600px oder schmäler ist */
 @media (max-width: 600px) {
   .header-row {
-    flex-direction: column; /* untereinander statt nebeneinander */
-    align-items: center;
+    /* flex-direction NICHT ändern, bleibt row */
+    justify-content: center;
+    gap: 20px; /* fester Abstand statt space-between */
   }
 
   .titel-rechts {
-    margin-right: 0;
-    margin-top: 10px;
+    margin-right: 0; /* großen Rand-Abstand entfernen */
   }
 
-  h1 {
-    font-size: 32px; /* kleiner auf dem Handy */
+  h2 {
+    margin-left: 0;
+    font-size: 22px; /* kleinere Schrift, damit es reinpasst */
   }
 }
 .container {
