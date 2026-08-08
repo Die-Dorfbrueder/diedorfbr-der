@@ -70,3 +70,7 @@ h2, .titel-rechts {
     font-size: 32px; /* kleiner auf dem Handy */
   }
 }
+.container {
+  max-width: 800px;
+  width: 100%; /* schrumpft auf schmalen Screens mit */
+}
