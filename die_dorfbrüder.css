@@ -9,7 +9,80 @@ body {
   align-items: center;
 }
 
+/* Überschriften *//* Grundlayout */
+body {
+  background-color: beige;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Überschriften */
+h1 {
+  text-align: center;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  margin-top: 30px;
+  animation: fadeIn 1.0s ease-in-out;
+}
+
+h2,
+.titel-rechts {
+  color: #282626;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 3px solid #d4a373;
+  padding-bottom: 6px;
+  display: inline-block;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+.titel-rechts {
+  margin-right: 50px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Handy-Ansicht */
+@media (max-width: 600px) {
+  .header-row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .titel-rechts {
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-left: 0;
+    font-size: 22px;
+  }
+}
 h1 {
   text-align: center;
   color: #333;
