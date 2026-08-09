@@ -8,33 +8,26 @@
     <link rel="stylesheet" href="die_dorfbrüder.css">
 </head>
 <body>
-
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
-
     <nav class="menu" id="menu">
         <a href="#ueber-uns">Über Uns</a>
         <a href="#episoden">Episoden</a>
         <a href="#links">Links</a>
     </nav>
-
     <header class="hero">
         <h1>Die Dorfbrüder Podcast</h1>
         <img src="Logo.jpg" alt="Die Dorfbrüder Cover" class="cover">
         <p class="subtitle">Geschichten, Gespräche und Gedanken – direkt aus dem Dorf.</p>
     </header>
-
     <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
-
-    <section id="ueber-uns" class="section">
+    <section id="ueber-uns" class="section scroll-fade">
         <h2>Über Uns</h2>
         <p>
-            Wir, Valentin und Paul, sind zwei beste Freunde aus dem Dorf, die ihre Erlebnisse, Gedanken und Geschichten in einem Podcast teilen. Von alltäglichen Begebenheiten bis hin zu tiefgründigen Gesprächen – wir nehmen euch mit auf unsere Reise durch das Leben im Dorf.
+            Wir, Valentin und Paul, sind zwei Brüder aus dem Dorf, die ihre Erlebnisse, Gedanken und Geschichten in einem Podcast teilen. Von alltäglichen Begebenheiten bis hin zu tiefgründigen Gesprächen – wir nehmen euch mit auf unsere Reise durch das Leben im Dorf.
         </p>
     </section>
-
     <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
-
-    <section id="episoden" class="section">
+    <section id="episoden" class="section scroll-fade">
         <h2>Episoden</h2>
         <div class="episode-list">
             <div class="episode-card">
@@ -47,10 +40,8 @@
             </div>
         </div>
     </section>
-
     <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
-
-    <section id="links" class="section">
+    <section id="links" class="section scroll-fade">
         <h2>Links</h2>
         <div class="link-buttons">
             <a href="#" class="link-button">Spotify</a>
@@ -58,19 +49,31 @@
             <a href="#" class="link-button">Instagram</a>
         </div>
     </section>
-
     <footer>
         <p>&copy; 2026 Die Dorfbrüder Podcast
             <br>
             &copy;Cutter und Website: Emil B.
         </p>
     </footer>
-
     <script>
         function toggleMenu() {
             document.getElementById("menu").classList.toggle("active");
         }
-    </script>
 
+        // Scroll-Animation
+        const scrollElements = document.querySelectorAll('.scroll-fade');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        scrollElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
