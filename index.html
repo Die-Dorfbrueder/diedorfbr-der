@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Die Dorfbrüder</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="die_dorfbrüder.css">
 </head>
 <body>
@@ -12,17 +12,59 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
     <nav class="menu" id="menu">
-        <a href="#">Start</a>
-        <a href="#">Über Uns</a>
-        <a href="#">Links</a>
+        <a href="#ueber-uns">Über Uns</a>
+        <a href="#episoden">Episoden</a>
+        <a href="#links">Links</a>
     </nav>
 
-    <h1>Die Dorfbrüder Podcast</h1>
-    <br>
-    <div class="header-row">
+    <header class="hero">
+        <h1>Die Dorfbrüder Podcast</h1>
+        <img src="Logo.jpg" alt="Die Dorfbrüder Cover" class="cover">
+        <p class="subtitle">Geschichten, Gespräche und Gedanken – direkt aus dem Dorf.</p>
+    </header>
+
+    <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
+
+    <section id="ueber-uns" class="section">
         <h2>Über Uns</h2>
-        <h2 class="titel-rechts">Links</h2>
-    </div>
+        <p>
+            Wir, Valentin und Paul, sind zwei Brüder aus dem Dorf, die ihre Erlebnisse, Gedanken und Geschichten in einem Podcast teilen. Von alltäglichen Begebenheiten bis hin zu tiefgründigen Gesprächen – wir nehmen euch mit auf unsere Reise durch das Leben im Dorf.
+        </p>
+    </section>
+
+    <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
+
+    <section id="episoden" class="section">
+        <h2>Episoden</h2>
+        <div class="episode-list">
+            <div class="episode-card">
+                <h3>Folge 1: Der Anfang</h3>
+                <p>Urlaub in den Bergen, Tiere, der Alltag und mehr</p>
+            </div>
+            <div class="episode-card">
+                <h3>Folge 2: ????</h3>
+                <p>...</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</div>
+
+    <section id="links" class="section">
+        <h2>Links</h2>
+        <div class="link-buttons">
+            <a href="#" class="link-button">Spotify</a>
+            <a href="#" class="link-button">Apple Podcasts</a>
+            <a href="#" class="link-button">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Die Dorfbrüder Podcast
+            <br>
+            &copy;Cutter und Website: Emil B.
+        </p>
+    </footer>
 
     <script>
         function toggleMenu() {
