@@ -228,3 +228,10 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+html{
+  scroll-behavior: smooth;
+}
+.episode-card {transition: transform 0.2s;}
+.episode-card:hover {
+  transform: translateY(-5px);
+}
