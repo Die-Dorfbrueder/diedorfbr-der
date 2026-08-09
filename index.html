@@ -8,11 +8,27 @@
     <link rel="stylesheet" href="die_dorfbrüder.css">
 </head>
 <body>
-    <h1>Der Dorfbrüder Podcast</h1>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav class="menu" id="menu">
+        <a href="#">Start</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Links</a>
+    </nav>
+
+    <h1>Die Dorfbrüder Podcast</h1>
     <br>
     <div class="header-row">
         <h2>Über Uns</h2>
         <h2 class="titel-rechts">Links</h2>
     </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
+
 </body>
 </html>
