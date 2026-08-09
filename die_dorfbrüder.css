@@ -236,3 +236,9 @@ html{
 .episode-card:hover {
   transform: translateY(-5px);
 }
+.subtitle {
+  font-style: italic;
+}
+p {
+  font-style:italic;
+}
