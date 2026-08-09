@@ -14,6 +14,47 @@ body {
   width: 100%;
 }
 
+/* Hamburger-Menü-Icon */
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #282626;
+  z-index: 10;
+}
+
+/* Ausklappbares Menü */
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  flex-direction: column;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu a {
+  color: #282626;
+  text-decoration: none;
+  padding: 8px 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #d4a373;
+}
+
 .header-row {
   display: flex;
   justify-content: space-between;
