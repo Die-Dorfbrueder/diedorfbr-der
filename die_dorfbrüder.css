@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 
-/* Hamburger-Menü-Icon */
+/* Hamburger-Menü-Icon (Desktop) */
 .menu-icon {
   position: absolute;
   top: 20px;
@@ -25,7 +25,7 @@ body {
   z-index: 10;
 }
 
-/* Ausklappbares Menü */
+/* Ausklappbares Menü (Desktop) */
 .menu {
   display: none;
   position: absolute;
@@ -127,5 +127,20 @@ h2 {
 
   .titel-rechts {
     margin-right: 15px;
+  }
+
+  /* Menü-Icon nur am Handy: rechts oben, dicker, größer */
+  .menu-icon {
+    left: auto;
+    right: 15px;
+    top: 15px;
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  .menu {
+    left: auto;
+    right: 15px;
+    top: 55px;
   }
 }
