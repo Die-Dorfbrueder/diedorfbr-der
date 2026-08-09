@@ -109,6 +109,7 @@ h2 {
 @media (max-width: 600px) {
   h1 {
     font-size: 28px;
+    margin-top: 60px;
   }
 
   .header-row {
@@ -129,7 +130,6 @@ h2 {
     margin-right: 15px;
   }
 
-  /* Menü-Icon nur am Handy: rechts oben, dicker, größer */
   .menu-icon {
     left: auto;
     right: 15px;
